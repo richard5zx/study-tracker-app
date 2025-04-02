@@ -23,10 +23,10 @@ mysql> show databases;
 
 Enter todolist database
 ```script
-mysql> USE idiom
+mysql> USE study_tracker;
 ```
 
-Create user table in the database
+Create "user" table in the database
 ```script
 mysql> CREATE TABLE user (
     user_id int NOT NULL AUTO_INCREMENT,
@@ -39,7 +39,7 @@ mysql> CREATE TABLE user (
 );
 ```
 
-Create study_history table in the database
+Create "study_history" table in the database
 ```script
 mysql> CREATE TABLE study_history (
     history_id int NOT NULL AUTO_INCREMENT,
@@ -53,8 +53,8 @@ mysql> CREATE TABLE study_history (
 ```
 Check details of table
 ```script
-mysql> DESCRIBE idiom;
-mysql> DESCRIBE idiom_example;
+mysql> DESCRIBE user;
+mysql> DESCRIBE study_history;
 ```
 
 ## Frontend
