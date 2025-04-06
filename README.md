@@ -4,7 +4,7 @@
 Started this project to help me upskill in the area of Java Web Development to land a job in the IT field in Australia. The purpose of the app is to track the time that is used for studying and study the habits of an individual.
 
 ## Tech used
-Backend: Java, JPA
+Backend: Java, JPA\
 Frontend: Node.js, Vue.js, JavaScript, HTML, CSS
 
 ## Backend
