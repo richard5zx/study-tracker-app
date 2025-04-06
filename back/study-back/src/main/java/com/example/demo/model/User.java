@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,15 +33,15 @@ public class User {
 	private String password;
 	
 	@Column(name="date_joined")
+	@CreationTimestamp
 	private String dateJoined;
 
-	public User(String firstname, String lastname, String username, String password, String dateJoined) {
+	public User(String firstname, String lastname, String username, String password) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.username = username;
 		this.password = password;
-		this.dateJoined = dateJoined;
 	}
 
 	public User() {
