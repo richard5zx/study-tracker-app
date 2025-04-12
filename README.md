@@ -39,6 +39,14 @@ mysql> CREATE TABLE user (
 );
 ```
 
+Create "admin" table in the database
+```script
+CREATE TABLE admin (
+    admin_id INT PRIMARY KEY,
+    FOREIGN KEY (admin_id) REFERENCES user(user_id) ON DELETE CASCADE
+);
+```
+
 Create "study_history" table in the database
 ```script
 mysql> CREATE TABLE study_history (
